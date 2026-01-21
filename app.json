@@ -8,6 +8,10 @@
     "scheme": "mystart",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+    "splash": {
+      "backgroundColor": "#ffffff",
+      "resizeMode": "contain"
+    },
     "ios": {
       "supportsTablet": true
     },
