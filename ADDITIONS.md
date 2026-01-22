@@ -64,3 +64,30 @@ What to add:
 Keyboard-aware scroll view
 Auto-scroll to focused input
 Dismiss keyboard on tap outside
+
+
+## Other Potential Additions ##
+
+# High priority #
+1. Haptic feedback — tactile feedback for button presses, errors, success
+2. Share functionality — native share sheet (share text, images, links)
+3. Clipboard utilities — copy/paste text and images
+4. Permissions manager — unified permission handling (camera, location, contacts, etc.)
+5. Confirmation dialogs — reusable confirm/alert dialogs
+
+# Medium priority #
+6. Keyboard utilities — handle keyboard show/hide, dismiss on scroll
+7. QR code scanner — scan QR codes and barcodes
+8. Location services — GPS, geocoding, location permissions
+9. Swipeable list items — swipe to delete/action pattern
+10. Image viewer — full-screen image viewing with zoom
+
+# Nice to have #
+11. App version checker — check for updates (Pop up for users of the app to update the app, takes them to the app store where they can update the app)
+12. Rate limiting — prevent API spam
+13. Infinite scroll — reusable infinite list pattern
+
+# Advanced Additions #
+14. GPS tracker (see your exact location and reach a function when close, kind of like a pokestop)
+15. Paying inside the app (subscribtion)
+16. How to create a pay wall, after for example 3 days of users using the app

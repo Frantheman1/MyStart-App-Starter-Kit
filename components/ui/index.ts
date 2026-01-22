@@ -19,6 +19,11 @@ export * from './bottom-sheet';
 export * from './search-bar';
 export * from './skeleton';
 export * from './feature-tooltip';
+export * from './confirm-dialog';
+export * from './swipeable-item';
+export * from './image-viewer';
+export * from './infinite-scroll';
+export * from './paywall';
 
 // Re-export animations for convenience
 export * from '@/lib/animations';

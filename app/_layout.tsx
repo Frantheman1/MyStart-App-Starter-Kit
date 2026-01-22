@@ -9,6 +9,7 @@ import { ToastProvider } from '@/components/ui/toast';
 import { ErrorBoundary } from '@/lib/errors/error-boundary';
 import { I18nProvider } from '@/lib/i18n';
 import { OfflineBanner } from '@/components/ui/offline-banner';
+import { ConfirmDialogProvider } from '@/components/ui/confirm-dialog';
 import { OnboardingProvider } from '@/lib/onboarding';
 import { TourOverlay } from '@/lib/onboarding/tour-overlay';
 
@@ -33,6 +34,7 @@ export default function RootLayout() {
                 <StatusBar style="auto" />
                 <OfflineBanner />
                 <TourOverlay />
+                <ConfirmDialogProvider />
               </ThemeProvider>
             </ToastProvider>
           </StoreProvider>

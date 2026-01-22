@@ -165,6 +165,19 @@ export async function scheduleLocalNotification(
     // @ts-ignore - Optional dependency
     const Notifications = await import('expo-notifications');
 
+    let notificationTrigger: any = null;
+    
+    if (trigger) {
+      if (trigger.seconds) {
+        notificationTrigger = {
+          seconds: trigger.seconds,
+          repeats: trigger.repeats || false,
+        };
+      } else if (trigger.date) {
+        notificationTrigger = trigger.date;
+      }
+    }
+
     const id = await Notifications.scheduleNotificationAsync({
       content: {
         title: content.title,
@@ -173,7 +186,7 @@ export async function scheduleLocalNotification(
         sound: content.sound !== false,
         badge: content.badge,
       },
-      trigger: trigger || null, // null = immediate
+      trigger: notificationTrigger, // null = immediate
     });
 
     logger.info('Local notification scheduled', { id });
